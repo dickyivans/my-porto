@@ -1,0 +1,273 @@
+body {
+  color: #101827;
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f4f6;
+}
+
+#hero .btn {
+  color: #101827;
+  background-color: white;
+}
+
+#hero .btn:hover {
+  color: #f3f4f6;
+  background-color: #101827;
+}
+
+#hero #cv-btn {
+  color: #f3f4f6;
+  background-color: #101827;
+  border-color: #f3f4f6;
+}
+
+#hero #cv-btn:hover {
+  color: #101827;
+  background-color: white;
+  border-color: #101827;
+}
+
+footer a {
+  color: #101827;
+}
+
+.my-card:hover {
+  transform: scale(1.04);
+}
+
+.my-card {
+  transition: all 0.3s;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide-in from left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide-in from right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide-in from bottom */
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-in from top */
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Applying animations */
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 2s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 2s ease-in-out;
+}
+
+.slide-in-bottom {
+  animation: slideInBottom 2s ease-in-out;
+}
+
+.slide-in-top {
+  animation: slideInTop 2s ease-in-out;
+}
+
+.experience {
+  animation: fromLeft 1.5s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+@keyframes fromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.experience-history {
+  animation: fromBottom 1.5s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+@keyframes fromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -150px;
+  }
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(150px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -35px; /* Menggunakan 'top' alih-alih 'bottom' */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10; /* Pastikan tooltip berada di atas item */
+}
+
+.item:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
