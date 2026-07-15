@@ -2,7 +2,6 @@ import { Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   GithubIcon,
-  GitlabIcon,
   InstagramIcon,
   LinkedinIcon,
   WhatsappIcon,
@@ -13,7 +12,6 @@ const contacts = [
   { label: "Email", href: `mailto:${profile.email}`, icon: Mail },
   { label: "LinkedIn", href: profile.socials.linkedin, icon: LinkedinIcon },
   { label: "GitHub", href: profile.socials.github, icon: GithubIcon },
-  { label: "GitLab", href: profile.socials.gitlab, icon: GitlabIcon },
   { label: "Instagram", href: profile.socials.instagram, icon: InstagramIcon },
   { label: "WhatsApp", href: profile.socials.whatsapp, icon: WhatsappIcon },
 ]

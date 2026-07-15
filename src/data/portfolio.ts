@@ -13,7 +13,6 @@ export const profile = {
   socials: {
     linkedin: "https://www.linkedin.com/in/dicky-ivan-setiawan-72a66223b/",
     github: "https://github.com/dickyivans",
-    gitlab: "https://gitlab.com/dicky-ivan-s",
     instagram: "https://www.instagram.com/dickyivans_/",
     whatsapp: "https://wa.me/6281287790226",
   },

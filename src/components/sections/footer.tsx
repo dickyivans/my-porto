@@ -7,8 +7,7 @@ export function Footer() {
       <div className="mx-auto max-w-5xl px-4">
         <Separator className="mb-6" />
         <p className="text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} {profile.name}. Built with Vite,
-          Tailwind CSS & shadcn/ui.
+          © {new Date().getFullYear()} {profile.name}.
         </p>
       </div>
     </footer>
