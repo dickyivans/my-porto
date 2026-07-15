@@ -1,4 +1,4 @@
-import { Download, Mail } from "lucide-react"
+import { Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { profile } from "@/data/portfolio"
@@ -28,11 +28,6 @@ export function Hero() {
       </p>
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
         <Button asChild size="lg">
-          <a href={profile.cvUrl}>
-            <Download /> Get my CV
-          </a>
-        </Button>
-        <Button asChild variant="outline" size="lg">
           <a href="#contact">
             <Mail /> Contact me
           </a>

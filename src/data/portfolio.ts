@@ -7,8 +7,6 @@ export const profile = {
     "Hello! I'm Dicky Ivan Setiawan, a fullstack developer with a strong focus on building robust and scalable systems. Since 2020 I've worked as a software developer, building backends with Java (Spring Boot) and Go, and modern frontends with Next.js, TypeScript, and Tailwind CSS.",
     "I'm experienced in RESTful API development, microservices architecture, and containerized deployments using Docker and Kubernetes. Currently I work as a Fullstack Developer at Dinas Komunikasi dan Informatika Kabupaten Sanggau, building government data platforms and internal web applications. Fluent in English and Indonesian, with strong critical thinking and time management skills.",
   ],
-  cvUrl:
-    "https://drive.google.com/uc?export=download&id=1s2D12ONStMKkxCC99tlj7fjc37xGIL_u",
   email: "dickyivan778@gmail.com",
   socials: {
     linkedin: "https://www.linkedin.com/in/dicky-ivan-setiawan-72a66223b/",
