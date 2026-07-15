@@ -2,10 +2,10 @@ export const profile = {
   name: "Dicky Ivan Setiawan",
   role: "Fullstack Developer",
   tagline:
-    "Informatics Technology graduate with a double degree from Esa Unggul University and Nanjing Xiaozhuang University. Over 3 years of experience building full-stack systems across transportation, healthcare, fintech, and government sectors.",
+    "Informatics Technology graduate with a double degree from Esa Unggul University and Nanjing Xiaozhuang University. Over 3 years of experience building full-stack systems across government, fintech, healthcare, and F&B sectors — from web and native mobile apps to biometric hardware integration.",
   about: [
-    "Hello! I'm Dicky Ivan Setiawan, a fullstack developer with a strong focus on building robust and scalable systems. Since 2020 I've worked as a software developer, building backends with Java (Spring Boot) and Go, and modern frontends with Next.js, TypeScript, and Tailwind CSS.",
-    "I'm experienced in RESTful API development, microservices architecture, and containerized deployments using Docker and Kubernetes. Currently I work as a Fullstack Developer at Dinas Komunikasi dan Informatika Kabupaten Sanggau, building government data platforms and internal web applications. Fluent in English and Indonesian, with strong critical thinking and time management skills.",
+    "Hello! I'm Dicky Ivan Setiawan, a fullstack developer with a strong focus on building robust and scalable systems. Since 2020 I've worked as a software developer, building backends with Java (Spring Boot), Go, and Laravel, modern frontends with Next.js, TypeScript, and Tailwind CSS, and native mobile apps with Flutter.",
+    "I'm experienced in RESTful API development, microservices architecture, and containerized deployments using Docker and Kubernetes. Currently I work as a Fullstack Developer at Dinas Komunikasi dan Informatika Kabupaten Sanggau, building government data platforms and designing its self-hosted infrastructure. Most recently I also delivered Haruna HRIS — an end-to-end HR and attendance platform for a multi-branch coffee shop network, combining a Laravel web admin, a Flutter attendance app, and direct biometric fingerprint machine integration. Fluent in English and Indonesian, with strong critical thinking and time management skills.",
   ],
   email: "dickyivan778@gmail.com",
   socials: {
@@ -45,23 +45,27 @@ export const skillGroups: SkillGroup[] = [
       "TypeScript",
       "Tailwind CSS",
       "Flutter",
+      "Riverpod",
       "Bootstrap",
       "HTML & CSS",
     ],
   },
   {
     title: "Database",
-    skills: ["MySQL", "MariaDB", "MongoDB", "Spring JPA"],
+    skills: ["MySQL", "MariaDB", "PostgreSQL", "MongoDB", "Redis", "Spring JPA"],
   },
   {
     title: "DevOps & Tools",
     skills: [
       "Docker",
       "Kubernetes",
+      "Proxmox",
+      "Nginx",
+      "MinIO",
       "Jenkins",
       "Google Cloud Platform",
+      "Cloudflare",
       "Git",
-      "Zookeeper",
       "Linux",
     ],
   },
